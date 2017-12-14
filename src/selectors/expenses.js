@@ -13,4 +13,9 @@ const getFilteredExpenses = (expenses, { text, sortBy, startDate, endDate }) => 
   });
 }
 
-export default getFilteredExpenses;
+const getSummedExpenses = (expenses) => {
+  if(!expenses) return 0;
+  else return expenses.reduce((acc, curr) => acc += curr.amount, 0);
+}
+
+export { getFilteredExpenses, getSummedExpenses };

@@ -20,12 +20,5 @@ exports[`Render Header component 1`] = `
   >
     Create Expense
   </NavLink>
-  <NavLink
-    activeClassName="selected"
-    ariaCurrent="true"
-    to="/help"
-  >
-    Help
-  </NavLink>
 </header>
 `;
